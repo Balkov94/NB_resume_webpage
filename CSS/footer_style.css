@@ -2,19 +2,34 @@ footer{
      width: 100%;
      border: 2px solid grey;
      display: flex;
-     height: 50vh;
+     height:24vh;
      display: flex;
-     justify-content: flex-start;
      flex-direction: column;
+     margin-bottom: 12px;
 }
 
-.footer_text_container.contact_title {
-     padding: 26px 12px 14px 22px;
+.contact_container{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-content: center;
 }
-.footer_text_container.contact_title h1{
-     font-size: 60px;
-     
+.contact_container h1{
+     font-size: 52px;
+     padding-bottom: 22px;
 }
-.footer_text_container{
-     padding: 26px 0px 0px 22px;
+.contact_icons{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     gap: 40px;
+}
+.contact_icons>div img{
+     width: 30px;
+}
+#footer_copyrights{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-content: center;
 }
