@@ -3,7 +3,6 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     border: 2px solid blueviolet;
      width: 100%;
      margin-bottom: 100px;
      margin-top: 50px;
@@ -22,6 +21,7 @@
      justify-content: space-between;
      flex-wrap: wrap;
      gap: 20px 20px;
+     font-size: 22px;
 }
 
 .logo{
@@ -30,11 +30,11 @@
      gap:12px;
      justify-content: center;
      align-items: center;
-     border: 2px solid rgb(84, 84, 214);
+    
 
      /* -webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
      opacity: .3; */
 }
 .logo img{
-     width: 40px;
+     width: 56px;
 }

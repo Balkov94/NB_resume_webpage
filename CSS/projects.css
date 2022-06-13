@@ -1,44 +1,90 @@
 #projects_title{
      width: 100%;
      display: flex;
-     justify-content: center;
-     align-items: center;
+     justify-content: flex-start;
+     padding-left: 6%;
      margin-bottom: 25px;
      font-size: 38px;
 }
 
 #projects_container{
+     padding-left: 40px;
      display: flex;
      flex-direction: row;
      width: 100%;
      margin-bottom: 150px;
+    
 }
-
+/* Project accordion menu section 
+     ! overriding Bootstrap elements
+*/
 #projects_text{
-     width: 30%;
+     width: 34%;
      height: 90vh;
-     border: 2px solid blue;
+     background-color: black;   
+     opacity: 0.8;
+     border-radius: 0px 0px 0px 100px;
+     overflow-y: hidden;
+     border-left: 1px solid rgb(155, 153, 153);
 }
 
+#accordion{
+     background-color: black;
+        
+}
+#accordion .card{
+     background-color: black; 
+}
+/* acc btn header  */
+.btn.btn-link{
+     font-size: 20px;
+     padding-left: 0px;
+     text-decoration: none;
+     color: lightskyblue;
+}
+.btn.btn-link:hover{
+     color:rgb(218, 215, 215);
+}
+.card-header{
+     padding: 12px;
+}
+/* collapsable elements */
+.card-body ul{
+     padding-left: 40px;
+     padding-right: 20px;
+}
+.card-body ul li{
+     list-style-type: circle;
+     padding-bottom: 8px; 
+}
+
+
+/* Project Laptop section ______________*/
 #projects_picture{
      width: 70%;
      height: 90vh;
      position: relative;
    
 }
-
 #projects_picture #laptop{
      width: 100%;
      height: 100vh;
      position: absolute;
 
 }
-#projects_picture #screen{
-     width: 73%;
-     height: 67vh;
-     left: 14%;
-     top: 5%;
-     position: absolute;
 
+#projects_picture > #screen{
+     display: flex;
+     justify-content: center;
+     position: absolute;
+     width: 75%;
+     height: 70vh;
+     left: 12%;
+     top: 3%;
+     background-color: rgb(0, 0, 0);
+
+     /* width: 100%;
+     height: 100%; */
 }
+     
 

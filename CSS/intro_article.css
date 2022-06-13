@@ -3,8 +3,6 @@ article{
      flex-direction: column;
      width: 100%;
      align-items: center;
-     /* justify-content: center;
-     align-items: center; */
      margin-bottom: 100px;
      margin-top: -30px;
 }
@@ -16,7 +14,7 @@ article{
      border: 5px solid rgb(243, 117, 27);
      border-radius: 50%;
      margin-bottom: -36px;
-    
+     z-index: 10;
 }
 #article_img_container img{
      width: 150;
@@ -26,12 +24,15 @@ article{
 
 #article_text_container{
      width: 60%;
-     height: 50vh;
-     border: 2px solid blue;
+     height: 50vh;  
+     background-color: black;
+     opacity: 0.8;
+     border-radius: 25px;
 }
 
 #article_text_container h2{
      font-size: 44px;
+     padding-left:28px;  
 }
 #article_text_container p{
      font-size: 26px;
