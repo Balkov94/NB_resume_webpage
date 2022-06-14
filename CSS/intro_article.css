@@ -5,6 +5,8 @@ article{
      align-items: center;
      margin-bottom: 100px;
      margin-top: -30px;
+     /* for JS animation initial state */
+     opacity: 0;
 }
 #article_img_container{
      display: flex;
@@ -40,4 +42,12 @@ article{
      /* word-spacing: 12px; */
      text-align: justify;
      padding: 40px 22px 0px 22px;
+}
+
+/* audio container -> hidden */
+#audio_container{
+     /* visibility: hidden; */
+     position: absolute;
+     top: 0px;
+     left: 0px;
 }
