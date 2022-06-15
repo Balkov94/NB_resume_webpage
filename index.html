@@ -19,23 +19,29 @@
      <link rel="stylesheet" href="CSS/typewrite_animation.css">
      <link rel="stylesheet" href="CSS/footer_style.css">
 
-
+     <script>
+          window.onload = function () {
+               var context = new AudioContext();
+          }
+     </script>
 
      <title>CV_webpage</title>
 </head>
 <div id="wrapper_background">
      <div id="audio_container">
-          <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none">
-          
-          </iframe>
-          <audio controls muted autoplay src="assets/sound-effects/keyBoardSound.m4a" type="audio/ogg">
-               <!-- <source  src="assets/sound-effects/keyBoardSound.m4a" type="audio/ogg"> -->
+          <audio controls muted autoplay id="audio" style="visibility:hidden">
+               <source src="assets/sound-effects/keyBoardSound.m4a" type="audio/mp3">
           </audio>
      </div>
-
      <div id="main_wrapper">
           <!-- wellcome text -->
-          <div id="wellcome_container">
+          <!-- 1 activating sound -> user interaction DIV-->
+          <div id="waving_hand_container">
+               <a href="#"><img id="waving_hand" src="assets/footer_icons/waving_hanPNG.png" alt="hand"></a>
+               <p>say hello</p>
+          </div>
+
+          <div id="welcome_container">
                <div class="css-typing">
                     <p>
                          👋 Hello, nice to meet you!
@@ -348,8 +354,9 @@
                <!-- laptop screen -->
                <div id="projects_picture">
                     <img id="laptop" src="assets/pictures/laptopPNG.png" alt="laptop">
-                    <video id="screen" controls>
-                         <source src="assets/projects_video_files/friend_project_video.mp4" type="video/mp4">
+                    <video id="screen" controls muted autoplay src="assets/projects_video_files/glVideo.mp4"
+                         type="video/mp4">
+                         <!-- <source src="assets/projects_video_files/friend_project_video.mp4" type="video/mp4"> -->
                </div>
           </div>
 
@@ -415,7 +422,10 @@
 </div>
 
 <!-- js effects -->
-<script src="js/hello_typing_load_effect.js"></script>
+<!-- <script src="js/load_animations_funcs.js"></script> -->
+<script src="js/technical_skills_effects.js"></script>
+<script src="js/personal_project_video_switching.js"></script>
+
 
 
 
