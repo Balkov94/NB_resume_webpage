@@ -1,4 +1,4 @@
-#skills_container{
+#skills_container {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -7,14 +7,16 @@
      margin-bottom: 100px;
      margin-top: 50px;
      height: 40vh;
+     /* position: relative; */
+     margin-top: 100px;
 }
 
-#skills_title_container{
+#skills_title_container {
      padding-bottom: 70px;
      font-size: 30px;
 }
 
-#logo_container{
+#logo_container {
      width: 70%;
      display: flex;
      flex-direction: row;
@@ -22,50 +24,57 @@
      flex-wrap: wrap;
      gap: 20px 20px;
      font-size: 22px;
+     z-index: 10;
 }
 
-.logo{
+.logo {
      display: flex;
      flex-direction: row;
-     gap:12px;
+     gap: 12px;
      justify-content: center;
      align-items: center;
-    
-
-     /* -webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
-     opacity: .3; */
 }
-.logo img{
+
+.logo img {
      width: 56px;
 }
+
 /* hoover logo p effects */
-.logo p:hover{
+.logo p:hover {
      color: #fff;
-         animation: flicker 1.5s infinite alternate;
-       
+     /* REMOVE BOX SHADOW here => too HARD FOR GPU /phones are going to  burn!*/
+     /* animation: flicker 1.5s infinite alternate; */
+
 }
-.flickerElement{
+.flickerElement {
      color: #fff;
      animation: flicker 1.5s infinite alternate;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0);
 }
-.normalElement{
+
+.normalElement {
      color: #fff;
 }
 
 @keyframes flicker {
+
      0%, 18%, 22%, 25%, 53%, 57%, 100% {
-         text-shadow:
-         0 0 4px #fff,
-         0 0 11px #fff,
-         0 0 19px #fff,
-         0 0 40px #0fa,
-         0 0 80px #0fa,
-         0 0 90px #0fa,
-         0 0 100px #0fa,
-         0 0 150px #0fa;
-     }
-     18%, 23%, 55% {        
-         text-shadow: none;
-     }    
-   }
+
+          text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
+      
+      }
+      
+      20%, 24%, 55% {  
+          text-shadow: none;
+      }    
+}
 

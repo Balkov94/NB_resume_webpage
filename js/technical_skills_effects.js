@@ -10,7 +10,7 @@
                setTimeout(() => {
                     allLogosP[i].className = "normalElement";
 
-               }, 1500);
+               }, 2000);
           })
      }
 

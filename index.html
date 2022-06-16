@@ -19,355 +19,369 @@
      <link rel="stylesheet" href="CSS/typewrite_animation.css">
      <link rel="stylesheet" href="CSS/footer_style.css">
 
-     <script>
-          window.onload = function () {
-               var context = new AudioContext();
-          }
-     </script>
 
      <title>CV_webpage</title>
 </head>
-<div id="wrapper_background">
-     <div id="audio_container">
-          <audio controls muted autoplay id="audio" style="visibility:hidden">
-               <source src="assets/sound-effects/keyBoardSound.m4a" type="audio/mp3">
-          </audio>
-     </div>
-     <div id="main_wrapper">
-          <!-- wellcome text -->
-          <!-- 1 activating sound -> user interaction DIV-->
-          <div id="waving_hand_container">
-               <a href="#"><img id="waving_hand" src="assets/footer_icons/waving_hanPNG.png" alt="hand"></a>
-               <p>say hello</p>
-          </div>
 
-          <div id="welcome_container">
-               <div class="css-typing">
-                    <p>
-                         👋 Hello, nice to meet you!
-                    </p>
-                    <p style="padding-left: 50px;">
-                         Let me introduce myself.
-                    </p>
-               </div>
+<body>
+     <div id="wrapper_background">
+          <div id="audio_container">
+               <audio controls muted autoplay id="audio" style="visibility:hidden">
+                    <source src="assets/sound-effects/keyBoardSound.m4a" type="audio/mp3">
+               </audio>
           </div>
-          <!--article who am I-->
-          <article>
-               <div id="article_img_container">
-                    <img src="assets/pictures/pic1.jpg" alt="photo">
-               </div>
-               <div id="article_text_container">
-                    <h2>Nikola Balkov</h2>
-                    <p>I love challenges, hard work, and well-deserved rest. I appreciate
-                         every opportunity to learn new skills and I want to develop in the
-                         field of programming and new technologies. I believe that with
-                         enough time and desire everything is achievable.
-                    </p>
+          <div id="main_wrapper">
+               <!-- wellcome text _______________________________________________________________-->
+               <!-- 1 activating sound -> user interaction DIV-->
+               <div id="waving_hand_container">
+                    <a href="#"><img id="waving_hand" src="assets/footer_icons/waving_hanPNG.png" alt="hand"></a>
+                    <p>say hello</p>
                </div>
 
-          </article>
-
-          <!-- education and certificates div -->
-          <div id="education_title_container">
-               <h1>Education and certification</h1>
-          </div>
-          <!-- education -->
-          <div id="education_container">
-
-               <div id="education_text_container">
-                    <div class="school">
-                         <div class="years">
-                              <p>2014 - 2018</p>
-                         </div>
-                         <div class="school_specealization">
-                              <p>Bachelor of Science: Primary pedagogy and foreign language</p>
-                         </div>
-                         <div class="school_name">
-                              Sofia University "St. Kliment Ohridski"
-                         </div>
-                    </div>
-
-                    <div class="school">
-                         <div class="years">
-                              <p>2009 – 2013</p>
-                         </div>
-                         <div class="school_specealization">
-                              <p>High school specialization: System Programming</p>
-                         </div>
-                         <div class="school_name">
-                              High School of Telecommunications
-                         </div>
+               <div id="welcome_container">
+                    <div class="css-typing">
+                         <p>
+                              👋 Hello, nice to meet you!
+                         </p>
+                         <p style="padding-left: 50px;">
+                              Let me introduce myself.
+                         </p>
                     </div>
                </div>
+               <!--article who am I______________________________________________________________-->
+               <article>
+                    <div id="article_img_container">
+                         <img src="assets/pictures/pic1.jpg" alt="photo">
+                    </div>
+                    <div id="article_text_container">
+                         <h2>Nikola Balkov</h2>
+                         <p>I love challenges, hard work, and well-deserved rest. I appreciate
+                              every opportunity to learn new skills and I want to develop in the
+                              field of programming and new technologies. I believe that with
+                              enough time and desire everything is achievable.
+                         </p>
+                    </div>
 
+               </article>
 
-               <div id="education_photo">
-                    <!-- <img src="assets/pictures/su_1.png" alt="university_photo"> -->
-
+               <!-- education and certificates div ______________________________________________-->
+               <div id="education_title_container">
+                    <h1>Education and certification</h1>
                </div>
-
-          </div>
-          <!-- certification -->
-          <div id="certification_container">
-
-               <div id="certification_carousel">
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-interval="3200"
-                         data-ride="carousel">
-                         <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                         </ol>
-                         <div class="carousel-inner" id="carousel_container">
-                              <div class="carousel-item active">
-                                   <img class="d-block w-100 carousel_img_override" src="assets/certificates/c5.PNG"
-                                        alt="First slide">
+                         <!-- 1 education -->
+               <div id="education_container">
+                    <div id="education_text_container">
+                         <div class="school">
+                              <div class="years">
+                                   <p>2014 - 2018</p>
                               </div>
-                              <div class="carousel-item">
-                                   <img class="d-block w-100 carousel_img_override" src="assets/certificates/c2.PNG"
-                                        alt="Second slide">
+                              <div class="school_specealization">
+                                   <p>Bachelor of Science: Primary pedagogy and foreign language</p>
                               </div>
-                              <div class="carousel-item">
-                                   <img class="d-block w-100 carousel_img_override" src="assets/certificates/c1.PNG"
-                                        alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                   <img class="d-block w-100 carousel_img_override" src="assets/certificates/c3.PNG"
-                                        alt="Fourth slide">
-                              </div>
-                              <div class="carousel-item">
-                                   <img class="d-block w-100 carousel_img_override" src="assets/certificates/c4.PNG"
-                                        alt="Sixth slide">
+                              <div class="school_name">
+                                   Sofia University "St. Kliment Ohridski"
                               </div>
                          </div>
-                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                              data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                         </a>
-                         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                              data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                         </a>
-                    </div>
-               </div>
 
-
-
-               <div id="certification_text">
-                    <p>TestDome IT Certification – HTML, CSS and JavaScript</p>
-                    <p> HackerRank Certificate - JavaScript</p>
-                    <p>Software University:</p>
-                    <p>Programming Fundamentals</p>
-                    <p>Programming Basics</p>
-               </div>
-          </div>
-
-
-          <!-- Technical skills -->
-          <div id="skills_container">
-               <div id="skills_title_container">
-                    <h1>Technical skills</h1>
-               </div>
-               <div id="logo_container">
-                    <div class="logo">
-                         <p>JavaScript</p>
-                         <span>
-                              <img src="assets/logos/JS_logo.png" alt="js logo">
-                         </span>
-                    </div>
-                    <div class="logo">
-                         <p>CSS</p>
-                         <span>
-                              <img src="assets/logos/css_logo.png" alt="css logo">
-                         </span>
-                    </div>
-                    <div class="logo">
-                         <p>HTML</p>
-                         <span>
-                              <img src="assets/logos/html_logo.png" alt="html logo">
-                         </span>
-                    </div>
-                    <div class="logo">
-                         <p>SaSS</p>
-                         <span>
-                              <img src="assets/logos/sass_logo.png" alt="Sass logo">
-                         </span>
-                    </div>
-                    <div class="logo">
-                         <p>Bootstrap</p>
-                         <span><img src="assets/logos/bootstrap_logo.png" alt="bootstrap logo">
-                         </span>
-                    </div>
-                    <div class="logo">
-                         <p>Git</p>
-                         <span>
-                              <img src="assets/logos/git_logo.png" alt="git logo">
-                         </span>
-                    </div>
-
-               </div>
-          </div>
-
-          <!-- Projects -->
-          <div id="projects_title">
-               <h1>Personal projects</h1>
-          </div>
-
-          <div id="projects_container">
-
-               <div id="projects_text">
-                    <div id="accordion">
-                         <div class="card">
-                              <div class="card-header" id="headingOne">
-                                   <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                             aria-expanded="true" aria-controls="collapseOne">
-                                             Pixel perfect CSS - glovoapp.com (2021)
-                                        </button>
-                                   </h5>
+                         <div class="school">
+                              <div class="years">
+                                   <p>2009 – 2013</p>
                               </div>
-                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                   data-parent="#accordion">
-                                   <div class="card-body">
-                                        <ul>
-                                             <li>Pixel perfect UI cloning</li>
-                                        </ul>
+                              <div class="school_specealization">
+                                   <p>High school specialization: System Programming</p>
+                              </div>
+                              <div class="school_name">
+                                   High School of Telecommunications
+                              </div>
+                         </div>
+                    </div>
+
+
+                    <div id="education_photo">
+                        <!-- here is background IMG !!! CARE -->
+                    </div>
+
+               </div>
+                         <!-- 2 certification -->
+               <div id="certification_container">
+                         <!-- Carousel with all certificates -->
+                    <div id="certification_carousel">
+                         <div id="carouselExampleIndicators" class="carousel slide" data-interval="3200"
+                              data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                   <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                   <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                              </ol>
+                              <div class="carousel-inner" id="carousel_container">
+                                   <div class="carousel-item active">
+                                        <img class="d-block w-100 carousel_img_override"
+                                             src="assets/certificates/c5.PNG" alt="First slide">
+                                   </div>
+                                   <div class="carousel-item">
+                                        <img class="d-block w-100 carousel_img_override"
+                                             src="assets/certificates/c2.PNG" alt="Second slide">
+                                   </div>
+                                   <div class="carousel-item">
+                                        <img class="d-block w-100 carousel_img_override"
+                                             src="assets/certificates/c1.PNG" alt="Third slide">
+                                   </div>
+                                   <div class="carousel-item">
+                                        <img class="d-block w-100 carousel_img_override"
+                                             src="assets/certificates/c3.PNG" alt="Fourth slide">
+                                   </div>
+                                   <div class="carousel-item">
+                                        <img class="d-block w-100 carousel_img_override"
+                                             src="assets/certificates/c4.PNG" alt="Sixth slide">
                                    </div>
                               </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                   data-slide="prev">
+                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                   <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                   data-slide="next">
+                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                   <span class="sr-only">Next</span>
+                              </a>
                          </div>
+                    </div>
+                         <!-- text with anchors (a) for certificates -->
+                    <div id="certification_text">
+                         <p>TestDome IT Certification – HTML, CSS and JavaScript</p>
+                         <p> HackerRank Certificate - JavaScript</p>
+                         <p>Software University:</p>
+                         <p>Programming Fundamentals</p>
+                         <p>Programming Basics</p>
+                    </div>
 
-                         <div class="card">
-                              <div class="card-header" id="headingFour">
-                                   <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                             data-target="#collapseFour" aria-expanded="false"
-                                             aria-controls="collapseFour">
-                                             Cinema - RESTful web service (OMDb API)
-                                        </button>
-                                   </h5>
-                              </div>
-                              <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                   data-parent="#accordion">
-                                   <div class="card-body">
-                                        <ul>
-                                             <li>* OMDb API - The OMDb API is a RESTful web service to obtain movie
-                                                  information,
-                                                  all content and images on the site are contributed and maintained by
-                                                  our
-                                                  users.
-                                             </li>
-                                             <li>* require NPM - live server</li>
-                                             <li>SPA application</p>
-                                             <li>Login and register form - localStorage</li>
-                                             <li>simple sign up validation</li>
-                                             <li>using fetch with "GET" method to get data from web API</p>
-                                             <li>adding and deleting items from Favourites page</li>
-                                             <li>custom styled components + Bootstrap</li>
-                                        </ul>
-                                   </div>
-                              </div>
+                    <!-- ** Floating imgs (astronalt and satelite)-->
+                    <div id="asto_container">
+                         <img src="assets/pictures/astr2.png" alt="astonalt with guitar">
+                    </div>
+                    <div id="satelite_container">
+                         <img src="assets/pictures/satelitePNG.png" alt="satelite">
+                    </div>
+               </div>
+
+
+               <!-- Technical skills _________________________________________________________-->
+               <div id="skills_container">
+                    <div id="skills_title_container">
+                         <h1>Technical skills</h1>
+                    </div>
+                    <div id="logo_container">
+                         <div class="logo">
+                              <p>JavaScript</p>
+                              <span>
+                                   <img src="assets/logos/JS_logo.png" alt="js logo">
+                              </span>
                          </div>
-
-                         <div class="card">
-                              <div class="card-header" id="headingThree">
-                                   <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                             data-target="#collapseThree" aria-expanded="false"
-                                             aria-controls="collapseThree">
-                                             Recipes web page
-                                        </button>
-                                   </h5>
-                              </div>
-                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                   data-parent="#accordion">
-                                   <div class="card-body">
-                                        <ul>
-                                             <li>SPA application</li>
-                                             <li>Login and register form - localStorage</li>
-                                             <li>simple sign up validation</li>
-                                             <li>recipes data from JSON</li>
-                                             <li>sorting and searching recipes</li>
-                                             <li>adding and deleting items from Favourites page</li>
-                                             <li>adding new recipe</li>
-                                             <li>adding and changing user data (picture, age etc.) - localStorage</li>
-                                             <li>entirely cumstom styled components</li>
-                                        </ul>
-                                   </div>
-                              </div>
+                         <div class="logo">
+                              <p>CSS</p>
+                              <span>
+                                   <img src="assets/logos/css_logo.png" alt="css logo">
+                              </span>
                          </div>
-
-
-
-                         <div class="card">
-                              <div class="card-header" id="headingTwo">
-                                   <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                             data-target="#collapseTwo" aria-expanded="false"
-                                             aria-controls="collapseTwo">
-                                             Development of 2048 game
-                                        </button>
-                                   </h5>
-                              </div>
-                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                   data-parent="#accordion">
-                                   <div class="card-body">
-                                        <ul>
-                                             <li> SPA (Single-page application)</li>
-                                             <li> implemented all game activities </li>
-                                             <li> storing data in localStorage </li>
-                                             <li> entirely cumstom styled components</li>
-                                        </ul>
-
-                                   </div>
-                              </div>
+                         <div class="logo">
+                              <p>HTML</p>
+                              <span>
+                                   <img src="assets/logos/html_logo.png" alt="html logo">
+                              </span>
                          </div>
-
-                         <div class="card">
-                              <div class="card-header" id="headingFive">
-                                   <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                             data-target="#collapseFive" aria-expanded="false"
-                                             aria-controls="collapseFive">
-                                             Simple business web page
-                                        </button>
-                                   </h5>
-                              </div>
-                              <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                   data-parent="#accordion">
-                                   <div class="card-body">
-                                        <ul>
-                                             <li>SPA application</li>
-                                             <li>entire data is hardcoded HTML</li>
-                                             <li>custom styled components + Bootstrap</li>
-                                        </ul>
-                                   </div>
-                              </div>
+                         <div class="logo">
+                              <p>SaSS</p>
+                              <span>
+                                   <img src="assets/logos/sass_logo.png" alt="Sass logo">
+                              </span>
+                         </div>
+                         <div class="logo">
+                              <p>Bootstrap</p>
+                              <span><img src="assets/logos/bootstrap_logo.png" alt="bootstrap logo">
+                              </span>
+                         </div>
+                         <div class="logo">
+                              <p>Git</p>
+                              <span>
+                                   <img src="assets/logos/git_logo.png" alt="git logo">
+                              </span>
                          </div>
 
                     </div>
                </div>
-               <!-- laptop screen -->
-               <div id="projects_picture">
-                    <img id="laptop" src="assets/pictures/laptopPNG.png" alt="laptop">
-                    <video id="screen" controls muted autoplay src="assets/projects_video_files/glVideo.mp4"
-                         type="video/mp4">
-                         <!-- <source src="assets/projects_video_files/friend_project_video.mp4" type="video/mp4"> -->
+
+               <!-- Projects __________________________________________________________________-->
+               <div id="projects_title">
+                    <h1>Personal projects</h1>
                </div>
+
+               <div id="projects_container">
+                    <div id="projects_text">
+                         <div id="accordion">
+                              <div class="card">
+                                   <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                             <button class="btn btn-link" data-toggle="collapse"
+                                                  data-target="#collapseOne" aria-expanded="true"
+                                                  aria-controls="collapseOne">
+                                                  Pixel perfect CSS - glovoapp.com (2021)
+                                             </button>
+                                        </h5>
+                                   </div>
+                                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                             <ul>
+                                                  <li>Pixel perfect UI cloning</li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="card">
+                                   <div class="card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                             <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                  data-target="#collapseFour" aria-expanded="false"
+                                                  aria-controls="collapseFour">
+                                                  Cinema - RESTful web service (OMDb API)
+                                             </button>
+                                        </h5>
+                                   </div>
+                                   <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                             <ul>
+                                                  <li>* OMDb API - The OMDb API is a RESTful web service to obtain movie
+                                                       information,
+                                                       all content and images on the site are contributed and maintained
+                                                       by
+                                                       our
+                                                       users.
+                                                  </li>
+                                                  <li>* require NPM - live server</li>
+                                                  <li>SPA application</p>
+                                                  <li>Login and register form - localStorage</li>
+                                                  <li>simple sign up validation</li>
+                                                  <li>using fetch with "GET" method to get data from web API</p>
+                                                  <li>adding and deleting items from Favourites page</li>
+                                                  <li>custom styled components + Bootstrap</li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="card">
+                                   <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                             <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                  data-target="#collapseThree" aria-expanded="false"
+                                                  aria-controls="collapseThree">
+                                                  Recipes web page
+                                             </button>
+                                        </h5>
+                                   </div>
+                                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                             <ul>
+                                                  <li>SPA application</li>
+                                                  <li>Login and register form - localStorage</li>
+                                                  <li>simple sign up validation</li>
+                                                  <li>recipes data from JSON</li>
+                                                  <li>sorting and searching recipes</li>
+                                                  <li>adding and deleting items from Favourites page</li>
+                                                  <li>adding new recipe</li>
+                                                  <li>adding and changing user data (picture, age etc.) - localStorage
+                                                  </li>
+                                                  <li>entirely cumstom styled components</li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+
+
+
+                              <div class="card">
+                                   <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                             <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                  data-target="#collapseTwo" aria-expanded="false"
+                                                  aria-controls="collapseTwo">
+                                                  Development of 2048 game
+                                             </button>
+                                        </h5>
+                                   </div>
+                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                             <ul>
+                                                  <li> SPA (Single-page application)</li>
+                                                  <li> implemented all game activities </li>
+                                                  <li> storing data in localStorage </li>
+                                                  <li> entirely cumstom styled components</li>
+                                             </ul>
+
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="card">
+                                   <div class="card-header" id="headingFive">
+                                        <h5 class="mb-0">
+                                             <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                  data-target="#collapseFive" aria-expanded="false"
+                                                  aria-controls="collapseFive">
+                                                  Simple business web page
+                                             </button>
+                                        </h5>
+                                   </div>
+                                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                             <ul>
+                                                  <li>SPA application</li>
+                                                  <li>entire data is hardcoded HTML</li>
+                                                  <li>custom styled components + Bootstrap</li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+                    <!-- laptop screen -->
+                    <div id="projects_picture">
+                         <img id="laptop" src="assets/pictures/laptopPNG.png" alt="laptop">
+                         <video id="screen" controls muted autoplay src="assets/projects_video_files/glVideo.mp4"
+                              type="video/mp4">
+                              <!-- <source src="assets/projects_video_files/friend_project_video.mp4" type="video/mp4"> -->
+                    </div>
+               </div>
+
+               
+               <!-- NEED REFACTORING FOOTER -->
+               <!-- foote img -->
+               <div id="space_suit_container">
+                    <img src="assets/pictures/astr1.png" alt="space suit">
+               </div>
+
+               <div id="footer_copyrights">
+                    <b>Ⓒ</b> 2022 Nikola Balkov. All Rights Reserved.
+               </div>
+
           </div>
-
-          <!-- interests -->
-
-          <!-- Footer - contacts -->
-
+          <!-- footer icons menu  -->
+          <!-- glitch test -->
+          
           <footer>
                <div class="contact_container">
                     <h1>Contact Me</h1>
                </div>
+
                <div class="contact_icons">
                     <div class="contact_icon_card">
                          <a href="tel:+359899197487">
@@ -401,46 +415,25 @@
                     </div>
                </div>
           </footer>
-          <div id="footer_copyrights">
-               <b>Ⓒ</b> 2022 Nikola Balkov. All Rights Reserved.
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <!-- wrapper background last -->
      </div>
-     <!-- wrapper background last -->
-</div>
 
-<!-- js effects -->
-<!-- <script src="js/load_animations_funcs.js"></script> -->
-<script src="js/technical_skills_effects.js"></script>
-<script src="js/personal_project_video_switching.js"></script>
+     <!-- js effects______________________________________________-->
+     <!-- <script src="js/load_animations_funcs.js"></script> -->
+     <script src="js/technical_skills_effects.js"></script>
+     <script src="js/personal_project_video_switching.js"></script>
 
 
-
-
-<!-- Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-     crossorigin="anonymous"></script>
-
-<body>
+     <!-- Bootstrap _______________________________________________-->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
 
 </body>
 
