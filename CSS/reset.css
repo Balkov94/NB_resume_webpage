@@ -2,10 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+.main_wrapper{
+     overflow-x: hidden;
+}
+p,ul li{
+     cursor: default;
+}
 *{
      box-sizing: border-box;
      color: white;
+}
+body{
+     /* because footer/space suit img width 101% for better centrating*/
+     overflow-x: hidden;
 }
 
 html, body, div, span, applet, object, iframe,

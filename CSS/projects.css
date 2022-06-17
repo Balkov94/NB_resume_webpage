@@ -13,6 +13,8 @@
      flex-direction: row;
      width: 100%;
      margin-bottom: 90vh;
+     /* position: relative; */
+     z-index: 10;
     
 }
 /* Project accordion menu section 
@@ -29,8 +31,7 @@
 }
 
 #accordion{
-     background-color: black;
-        
+     background-color: black;      
 }
 #accordion .card{
      background-color: black; 
@@ -57,13 +58,35 @@
      list-style-type: circle;
      padding-bottom: 8px; 
 }
+/* after accordion text _____P.S.*/
+.after_accordion_text{
+     padding-left: 20px;
+     font-style: italic;    
+}
+.after_accordion_text a{
+     text-decoration: none;
+     color: white;
+}
+
+.after_accordion_text img{
+     -webkit-filter: invert(100%); /* Safari/Chrome */
+     filter: invert(100%);
+     width: 26px;
+     margin-left: 12px;
+     vertical-align: bottom;
+}
 
 
-/* Project Laptop section ______________*/
+
+
+
+
+/* Project Laptop section __________________________*/
 #projects_picture{
      width: 70%;
      height: 90vh;
      position: relative;
+     z-index: 10;
    
 }
 #projects_picture #laptop{

@@ -24,7 +24,7 @@
 </head>
 
 <body>
-     <div id="wrapper_background">
+     <div id="wrapper_background" style="overflow-x:hidden;">
           <div id="audio_container">
                <audio controls muted autoplay id="audio" style="visibility:hidden">
                     <source src="assets/sound-effects/keyBoardSound.m4a" type="audio/mp3">
@@ -35,7 +35,7 @@
                <!-- 1 activating sound -> user interaction DIV-->
                <div id="waving_hand_container">
                     <a href="#"><img id="waving_hand" src="assets/footer_icons/waving_hanPNG.png" alt="hand"></a>
-                    <p>say hello</p>
+                    <p>Say hello</p>
                </div>
 
                <div id="welcome_container">
@@ -51,10 +51,14 @@
                <!--article who am I______________________________________________________________-->
                <article>
                     <div id="article_img_container">
-                         <img src="assets/pictures/pic1.jpg" alt="photo">
+                         <div class="gredient_circle">
+                              <img src="assets/pictures/pic1.jpg" alt="photo">
+                         </div>
                     </div>
                     <div id="article_text_container">
-                         <h2>Nikola Balkov</h2>
+
+                         <h1>Nikola Balkov</h1>
+
                          <p>I love challenges, hard work, and well-deserved rest. I appreciate
                               every opportunity to learn new skills and I want to develop in the
                               field of programming and new technologies. I believe that with
@@ -66,9 +70,9 @@
 
                <!-- education and certificates div ______________________________________________-->
                <div id="education_title_container">
-                    <h1>Education and certification</h1>
+                    <h1>Education and certificates</h1>
                </div>
-                         <!-- 1 education -->
+               <!-- 1 education -->
                <div id="education_container">
                     <div id="education_text_container">
                          <div class="school">
@@ -98,13 +102,14 @@
 
 
                     <div id="education_photo">
-                        <!-- here is background IMG !!! CARE -->
+                         <!-- here is background IMG !!! CARE -->
+                         <p>Sofia University "St. Kliment Ohridski"</p>
                     </div>
 
                </div>
-                         <!-- 2 certification -->
+               <!-- 2 certification -->
                <div id="certification_container">
-                         <!-- Carousel with all certificates -->
+                    <!-- Carousel with all certificates -->
                     <div id="certification_carousel">
                          <div id="carouselExampleIndicators" class="carousel slide" data-interval="3200"
                               data-ride="carousel">
@@ -149,13 +154,22 @@
                               </a>
                          </div>
                     </div>
-                         <!-- text with anchors (a) for certificates -->
+                    <!-- text with anchors (a) for certificates -->
                     <div id="certification_text">
-                         <p>TestDome IT Certification – HTML, CSS and JavaScript</p>
-                         <p> HackerRank Certificate - JavaScript</p>
-                         <p>Software University:</p>
-                         <p>Programming Fundamentals</p>
-                         <p>Programming Basics</p>
+                         <a href="https://app.testdome.com/cert/3df88fe1f85e430d92d9016478564ef0" target="_blank">
+                              TestDome IT Certification – HTML, CSS and JavaScript
+                         </a>
+                         <a href="https://www.hackerrank.com/certificates/cb3a22a5be5a" target="_blank">
+                              HackerRank Certificate - JavaScript
+                         </a>
+                         <h6><strong>Software University:</strong></h6>
+
+                         <a href="https://softuni.bg/certificates/details/111589/7ff99c27" target="_blank">
+                              Programming Fundamentals
+                         </a>
+                         <a href="https://softuni.bg/certificates/details/101620/c4f5d68f" target="_blank">
+                              Programming Basics
+                         </a>
                     </div>
 
                     <!-- ** Floating imgs (astronalt and satelite)-->
@@ -217,7 +231,6 @@
                <div id="projects_title">
                     <h1>Personal projects</h1>
                </div>
-
                <div id="projects_container">
                     <div id="projects_text">
                          <div id="accordion">
@@ -351,6 +364,20 @@
                                    </div>
                               </div>
 
+                              <div class="card">
+                                   <div class="card-header" id="headingSix">
+                                        <div class="after_accordion_text">
+                                             <a href="https://github.com/Balkov94" target="_blank">
+                                                  <h6 class="after_accordion_text">P.S. Most of the projects are
+                                                       mobile-friendly</h6>
+                                                  <h6 class="after_accordion_text">check them at <img
+                                                            src="assets/footer_icons/github.svg" alt="github icon"></h6>
+                                             </a>
+
+                                        </div>
+                                   </div>
+                              </div>
+
                          </div>
                     </div>
                     <!-- laptop screen -->
@@ -362,24 +389,30 @@
                     </div>
                </div>
 
-               
-               <!-- NEED REFACTORING FOOTER -->
-               <!-- foote img -->
+
+               <!-- FOOTERs combo -->
+               <!--  1 foote space suit img + copy rights-->
                <div id="space_suit_container">
                     <img src="assets/pictures/astr1.png" alt="space suit">
                </div>
 
                <div id="footer_copyrights">
-                    <b>Ⓒ</b> 2022 Nikola Balkov. All Rights Reserved.
+                    <b>Ⓒ</b> 2022 made with &#128156; by Nikola Balkov. All Rights Reserved.
                </div>
 
           </div>
-          <!-- footer icons menu  -->
-          <!-- glitch test -->
-          
+
+          <!--2 footer icons -->
           <footer>
-               <div class="contact_container">
-                    <h1>Contact Me</h1>
+               <div class="contactme_container">
+                    <!-- glitch test -->
+                    <div class="glitch_container">
+                         <div class="glitch_content">
+                              <h2 class="text" data-text="Contact Me">
+                                   Contact Me
+                              </h2>
+                         </div>
+                    </div>
                </div>
 
                <div class="contact_icons">
@@ -394,22 +427,22 @@
                          </a>
                     </div>
                     <div class="contact_icon_card">
-                         <a href="https://www.linkedin.com/in/nikola-balkov-413010162/">
+                         <a href="https://www.linkedin.com/in/nikola-balkov-413010162/" target="_blank">
                               <img src="assets/footer_icons/linkedin.svg" alt="linkedIn icon">
                          </a>
                     </div>
                     <div class="contact_icon_card">
-                         <a href="https://www.facebook.com/profile.php?id=100007829792770">
+                         <a href="https://www.facebook.com/profile.php?id=100007829792770" target="_blank">
                               <img src="assets/footer_icons/facebook.svg" alt="facebook icon">
                          </a>
                     </div>
                     <div class="contact_icon_card">
-                         <a href="https://www.instagram.com/nbalkov/">
+                         <a href="https://www.instagram.com/nbalkov/" target="_blank">
                               <img src="assets/footer_icons/instagram.svg" alt="insagram icon">
                          </a>
                     </div>
                     <div class="contact_icon_card">
-                         <a href="https://github.com/Balkov94">
+                         <a href="https://github.com/Balkov94" target="_blank">
                               <img src="assets/footer_icons/github.svg" alt="github icon">
                          </a>
                     </div>

@@ -20,7 +20,7 @@
 /* ____ */
 #education_text_container {
      width: 50%;
-     height: 50vh;
+     height: fit-content;
      display: flex;
      flex-direction: column;
      background-color: black;
@@ -28,21 +28,17 @@
      border-radius: 25px 0px 0px 25px;
      border-left: 1px solid rgb(194, 193, 193);
 }
-
 .school {
      display: flex;
      flex-direction: column;
      padding-bottom: 40px;
 }
-
 .school .years {
      display: flex;
      justify-content: center;
      padding: 12px 0px 12px 0px;
      border-bottom: 1px solid rgb(91, 90, 90);
-
 }
-
 .school .school_specealization {
      display: flex;
      justify-content: flex-start;
@@ -63,14 +59,30 @@
      background-repeat: no-repeat;
      background-size: contain;
      background-position: center;
-
+     /* position: relative; */
+     display: flex;
+     justify-content: end;
 }
-
-#education_photo img {
-     width: 200px;
-     height: 150px;
-
+#education_photo p{
+     width: 100%;
+     font-style: italic;
+     text-align: center;
+     opacity: 0.9;
+    
+     
 }
+@media screen and (max-width: 900px) {
+     #education_photo{
+          display: none;
+     }
+     #education_text_container{
+          width: 100%;
+          border-radius: 25px 25px 25px 25px;
+          border-right: 1px solid rgb(91, 90, 90);
+     }
+   }
+
+
 
 /* certification _____________________*/
 #certification_container {
@@ -82,11 +94,13 @@
      /* border: 2px solid yellowgreen; */
      margin-bottom: 100px;
      position: relative;
-    
-
+     
 }
 
 #certification_text {
+     display: flex;
+     flex-direction: column;
+     gap: 36px;
      background-color: black;
      opacity: 0.8;
      padding: 42px 16px 18px 16px;
@@ -96,12 +110,40 @@
      border-right: 1px solid rgb(178, 178, 178);
      border-radius: 0px 25px 25px 0px;
      z-index: 10;
+     text-align: right;
 }
-
-#certification_text p {
-     padding-bottom: 18px;
+#certification_text a{
+     color: white;
+     text-decoration: none;
 }
+#certification_text a:hover{
+    letter-spacing: 1px;
+    transition: 1s;
+}
+@media screen and (max-width: 900px) {
+     #certification_container{
+          flex-direction: column;
+          gap:20vh;
+          zoom: 0.8;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+     }
+     /* NEED FIX for mobile  */
+     #certification_carousel{
+          width: 100%;
+          margin-top: 50vh;
+         
+     }
+     #carouselExampleIndicators{
+          width: 90%;
+     }
+     #certification_text{
+          width: 90%;
+          margin-bottom: 30vh;
+     }
 
+   }
 
 
 /* carousel bootstrap OVERRIDE____________________*/
@@ -133,6 +175,7 @@
      background-color: rgb(43, 41, 41);
      border: 1px solid white;
 }
+
 
 
 /* floating astonalt ____________________________________*/
@@ -204,3 +247,10 @@
           width: 300px;
      }
 }
+
+/* Movile____________ */
+@media only screen and (max-width: 600px) {
+     body {
+       background-color: lightblue;
+     }
+   }

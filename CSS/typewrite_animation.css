@@ -7,7 +7,8 @@
      flex-direction: column;
      width: 100%;
      height: 100vh;
-     font-size: 40px;
+     font-size: 56px;
+     font-family: 'Brush Script MT', cursive;
      
 }
 #waving_hand_container img{
@@ -30,11 +31,11 @@
 }
 
 
+
 /* second part animation _______________________*/
 .css-typing{
      /* width: 100%;
      background-color: rgb(50, 50, 137); */
-
      width: 100%;
      height: 40vh;
      display: flex;
@@ -62,8 +63,8 @@
    .css-typing p:nth-child(2) {
      width: 16.0em;
      opacity: 0;
-     -webkit-animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
-     animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
+     -webkit-animation: type1 3s steps(40, end), blink .5s step-end infinite alternate;
+     animation: type1 3s steps(40, end), blink .5s step-end infinite alternate;
      -webkit-animation-delay: 4s;
      animation-delay: 4s;
      -webkit-animation-fill-mode: forwards;
@@ -82,21 +83,7 @@
      }
    }
    
-   @-webkit-keyframes type {
-     0% {
-       width: 0;
-     }
-     99.9% {
-       border-right: .15em solid orange;
-     }
-     100% {
-       border: none;
-     }
-   }
-   
-   /* ----------------------- */
-   
-   @keyframes type3 {
+   @keyframes type1 {
      0% {
        width: 0;
      }
@@ -107,18 +94,7 @@
        opacity: 1;
      }
    }
-   
-   @-webkit-keyframes type3 {
-     0% {
-       width: 0;
-     }
-     1% {
-       opacity: 1;
-     }
-     100% {
-       opacity: 1;
-     }
-   }
+
    /* cursor */
    @keyframes blink {
      50% {
@@ -129,4 +105,19 @@
      50% {
        border-color: tranparent;
      }
+   }
+
+   /* Mobile ____________________ */
+   @media only screen and (max-width: 1200px) {
+     .welcome_container{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+
+      .css-typing{
+          zoom: 0.6;
+      }
    }

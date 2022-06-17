@@ -13,6 +13,7 @@ function activating_Typing_Sound() {
 
      let typingContainer = document.getElementById("welcome_container");
      typingContainer.style.display = "none";
+     
      wavingHand.addEventListener("click", function () {
           audio.muted = false;
           audio.play();
