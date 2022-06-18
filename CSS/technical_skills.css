@@ -7,13 +7,17 @@
      margin-bottom: 100px;
      margin-top: 50px;
      height: 40vh;
-     /* position: relative; */
      margin-top: 100px;
+     position: relative;
 }
 
+
 #skills_title_container {
-     padding-bottom: 70px;
-     font-size: 30px;
+     margin-top: 40vh;
+     padding-bottom: 10vh;
+     font-size: 36px;
+     font-family: 'Courier New', monospace;
+     font-weight: 700;
 }
 
 #logo_container {
@@ -77,4 +81,87 @@
           text-shadow: none;
       }    
 }
+
+/* floating img */
+/* floating astonalt ____________________________________*/
+/* astonalt floating img style */
+#asto_container {
+     position: absolute;
+     top: 0px;
+     left: 10px;
+     animation-name: floating;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+}
+
+#asto_container img {
+     width: 230px;
+     transition: width 1s;
+     transition-timing-function:linear; 
+}
+
+@keyframes floating {
+     0% {
+          transform: translateY(-50px);
+        
+     }
+
+     50% {
+          transform: translateY(-110px);
+     }
+
+     100% {
+          transform: translateY(-50px);
+     }
+}
+
+#asto_container img:hover {
+     width: 130px;
+}
+
+/* satelite container */
+#satelite_container{
+     position: absolute;
+     top: -24vh;
+     right: 40px;   
+     z-index:1;
+}
+#satelite_container img{
+   width: 300px; 
+   animation-name: zoomEffect;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   
+   
+}
+@keyframes zoomEffect {
+     0% {
+          width: 240px;
+     }
+
+     50% {
+          width: 280px;
+     }
+
+     100% {
+          width: 240px;
+     }
+}
+ 
+/*  */
+@media only screen and (max-width: 900px) {
+     #asto_container, #satelite_container{
+          display: none;
+     }
+     #logo_container{
+          flex-direction: column;
+          gap: 12px;
+     }
+ 
+   }
+
 

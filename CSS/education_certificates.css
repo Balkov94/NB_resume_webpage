@@ -54,12 +54,10 @@
 #education_photo {
      width: 50%;
      height: 50vh;
-     /* border: 2px solid rgb(138, 138, 180); */
      background-image: url("../assets/pictures/su_1.png");
      background-repeat: no-repeat;
      background-size: contain;
      background-position: center;
-     /* position: relative; */
      display: flex;
      justify-content: end;
 }
@@ -83,7 +81,6 @@
    }
 
 
-
 /* certification _____________________*/
 #certification_container {
      display: flex;
@@ -91,8 +88,6 @@
      width: 90%;
      margin: auto;
      height: 66vh;
-     /* border: 2px solid yellowgreen; */
-     margin-bottom: 100px;
      position: relative;
      
 }
@@ -111,6 +106,7 @@
      border-radius: 0px 25px 25px 0px;
      z-index: 10;
      text-align: right;
+     
 }
 #certification_text a{
      color: white;
@@ -120,31 +116,6 @@
     letter-spacing: 1px;
     transition: 1s;
 }
-@media screen and (max-width: 900px) {
-     #certification_container{
-          flex-direction: column;
-          gap:20vh;
-          zoom: 0.8;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-     }
-     /* NEED FIX for mobile  */
-     #certification_carousel{
-          width: 100%;
-          margin-top: 50vh;
-         
-     }
-     #carouselExampleIndicators{
-          width: 90%;
-     }
-     #certification_text{
-          width: 90%;
-          margin-bottom: 30vh;
-     }
-
-   }
-
 
 /* carousel bootstrap OVERRIDE____________________*/
 #certification_carousel {
@@ -175,8 +146,6 @@
      background-color: rgb(43, 41, 41);
      border: 1px solid white;
 }
-
-
 
 /* floating astonalt ____________________________________*/
 /* astonalt floating img style */
@@ -249,8 +218,45 @@
 }
 
 /* Movile____________ */
-@media only screen and (max-width: 600px) {
-     body {
-       background-color: lightblue;
+@media screen and (max-width: 1000px) {
+     #certification_container{
+          flex-direction: column;
+          gap:20vh;
+          zoom: 0.8;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
      }
+     #certification_carousel{
+          width: 100%;
+          margin-top: 50vh;
+         
+     }
+     #carouselExampleIndicators{
+          width: 90%;
+     }
+     #certification_text{
+          width: 90%;
+          margin-bottom: 30vh;
+     }
+     #certification_carousel{
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          zoom: 0.7;
+        }
+
    }
+   
+
+@media only screen and (max-width: 1200px) {
+     #education_container,#certification_container{
+          margin-bottom: 30vh;
+     }
+   
+        #carouselExampleIndicators{
+          width: 100%;
+        }
+   }
+
+  

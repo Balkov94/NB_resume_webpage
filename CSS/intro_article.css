@@ -6,7 +6,7 @@ article{
      margin-bottom: 100px;
      margin-top: -30px;
      /* for JS animation initial state */
-     opacity: 1; 
+     opacity: 0; 
 }
 #article_img_container{
      display: flex;
