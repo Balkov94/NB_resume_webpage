@@ -44,12 +44,9 @@
 }
 
 /* hoover logo p effects */
-.logo p:hover {
-     color: #fff;
      /* REMOVE BOX SHADOW here => too HARD FOR GPU /phones are going to  burn!*/
      /* animation: flicker 1.5s infinite alternate; */
 
-}
 .flickerElement {
      color: #fff;
      animation: flicker 1.5s infinite alternate;
@@ -154,8 +151,11 @@
  
 /*  */
 @media only screen and (max-width: 900px) {
-     #asto_container, #satelite_container{
+     #asto_container{
           display: none;
+     }
+     #satelite_container{
+          zoom: 1.2;
      }
      #logo_container{
           flex-direction: column;
@@ -163,5 +163,11 @@
      }
  
    }
-
+/* remove HOVER effect from mobile devices */
+@media only screen and (max-width: 768px) {
+     .logo img{
+          pointer-events: none;
+     }
+ 
+   }
 

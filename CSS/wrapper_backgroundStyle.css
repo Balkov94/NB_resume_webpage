@@ -4,9 +4,17 @@
      position: absolute;
      top: 0px;
      left:0px;
-     background-image:url("../assets/background/w4");
+     background-image:url("../assets/background/big_screen_background");
      background-repeat: no-repeat;
      background-size:cover;
      background-attachment: fixed;
      
 }
+
+/* add ne background img for mobiles */
+@media only screen and (max-width: 768px) {
+     #wrapper_background{
+          background-image:url("../assets/background/mobile_background.jpg");
+          
+     }
+   }

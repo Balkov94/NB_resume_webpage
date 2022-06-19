@@ -24,8 +24,6 @@
 */
 #projects_text{
      width: 34%;
-     /* height: fit-content; */
-     /* padding-bottom: 5vh; */
      background-color: black;   
      opacity: 0.8;
      border-radius: 0px 0px 0px 100px;
@@ -85,9 +83,6 @@
 
 
 
-
-
-
 /* Project Laptop section __________________________*/
 #projects_picture{
      width: 70%;
@@ -113,58 +108,66 @@
      top: 3%;
      background-color: rgb(0, 0, 0);
 }
-
+/* MOBILE versions _______________________ */
 
 @media only screen and (max-width: 1200px) {
      #projects_container {
        flex-direction: column-reverse;
-       gap: 10vh;
+       gap: 5vh;
        justify-content: center;
        align-items: center;
+       padding-left: 10px;
+       padding-right: 10px;
        
      }
-     #projects_picture{
-          width: 80%;
-          zoom: 0.7;
-          
-     }
      #projects_text{
-          width: 80%;
+          width: 100%;
           padding-top:40px;
           border-radius:40px;
           border-right: 1px solid rgb(155, 153, 153);
-          zoom: 1;
           height: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+     }
+     #projects_picture{
+          width: 100%;
+          height: 80vh;
+     }
+     #laptop{
+          display: none;
+     }
+     #screen{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          
+     }
+     #projects_picture > #screen{
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          width: 100%;
+          left: 0px;
+          top: 0px;
+
      }
    }
 
-   @media only screen and (max-width: 820px) {
+   /* big screen fix     */
+
+   @media only screen and (max-width: 1700px) {
           #projects_picture{
-               width: 70%;
-               zoom: 0.5;
-               
+               zoom: 0.9;
           }
        
-     
-}
-
-@media only screen and (max-width: 540px) {
-     #projects_picture{
-          width: 70%;
-          zoom: 0.4;
-          
      }
-  
 
-}
-
-@media only screen and (max-width: 420px) {
-     #projects_picture{
-          width: 70%;
-          zoom: 0.2;
-          
+     @media only screen and (max-width: 1450px) {
+          #projects_picture{
+               zoom: 0.8;
+          }
+       
      }
-  
 
-}
+  
 

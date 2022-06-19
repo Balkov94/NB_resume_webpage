@@ -80,7 +80,7 @@ footer{
 }
 
    /* Mobile ____________________ */
-   @media only screen and (max-width: 800px) {
+   @media only screen and (max-width: 769px) {
      .contact_icons>div img:hover{
           opacity: 1;
           width: 40px;
@@ -99,6 +99,8 @@ footer{
           zoom: 0.7;
      }
    }
+
+
 
 /* contact me glitch effect _____________________________*/
 /* CARE ! */
