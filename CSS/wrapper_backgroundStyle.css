@@ -14,7 +14,7 @@
 /* add ne background img for mobiles */
 @media only screen and (max-width: 768px) {
      #wrapper_background{
-          background-image:url("../assets/background/mobile_background.jpg");
-          
+          background-image:url("../assets/background/spaceWallepper3.jpg");
+         
      }
    }
