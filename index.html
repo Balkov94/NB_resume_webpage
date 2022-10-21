@@ -6,19 +6,19 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Bootstrap -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+   <link  defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <!--  -->
-   <link rel="stylesheet" href="CSS/reset.css">
-   <link rel="stylesheet" href="CSS/wrapper_backgroundStyle.css">
-   <link rel="stylesheet" href="CSS/wellcome_div.css">
-   <link rel="stylesheet" href="CSS/intro_article.css">
-   <link rel="stylesheet" href="CSS/education_certificates.css">
-   <link rel="stylesheet" href="CSS/technical_skills.css">
-   <link rel="stylesheet" href="CSS/projects.css">
-   <link rel="stylesheet" href="CSS/typewrite_animation.css">
-   <link rel="stylesheet" href="CSS/footer_style.css">
-   <link rel="icon" type="image/x-icon" href="assets/footer_icons/favicon.ico">
+   <link defer rel="stylesheet" href="CSS/reset.css">
+   <link defer rel="stylesheet" href="CSS/wrapper_backgroundStyle.css">
+   <link defer rel="stylesheet" href="CSS/wellcome_div.css">
+   <link defer rel="stylesheet" href="CSS/intro_article.css">
+   <link defer rel="stylesheet" href="CSS/education_certificates.css">
+   <link defer rel="stylesheet" href="CSS/technical_skills.css">
+   <link defer rel="stylesheet" href="CSS/projects.css">
+   <link defer rel="stylesheet" href="CSS/typewrite_animation.css">
+   <link defer rel="stylesheet" href="CSS/footer_style.css">
+   <link defer rel="icon" type="image/x-icon" href="assets/footer_icons/favicon.ico">
 
 
    <title>Resume page</title>
@@ -60,10 +60,11 @@
 
                <h1>Nikola Balkov</h1>
 
-               <p>I love challenges, hard work, and well-deserved rest. I appreciate
-                  every opportunity to learn new skills and I want to develop in the
-                  field of programming and new technologies. I believe that with
-                  enough time and desire everything is achievable.
+               <p>
+                  I love challenges, hard work, and well-deserved rest. 
+                  I appreciate every opportunity to learn new skills 
+                  and want to develop in the field of software development and new technologies. 
+                  I believe that with enough time and desire everything is achievable.
                </p>
             </div>
 
@@ -217,7 +218,6 @@
                   <span><img src="assets/logos/bootstrap_logo.png" alt="bootstrap logo">
                   </span>
                </div>
-               <!--  -->
                <div class="logo">
                   <p>TypeScript</p>
                   <span><img src="assets/logos/ts_logo.svg" alt="TypeScript logo">
@@ -233,7 +233,12 @@
                   <span><img src="assets/logos/MUI_logo.svg" alt="MUI logo">
                   </span>
                </div>
-               <!--  -->
+               <div class="logo">
+                  <p>Mongodb</p>
+                  <span>
+                     <img src="assets/logos/mongoLogo.png" alt="mongo logo">
+                  </span>
+               </div>
                <div class="logo">
                   <p>Git</p>
                   <span>
@@ -252,6 +257,33 @@
             <div id="projects_text">
                <div id="accordion">
                   <div class="card">
+                     <div class="card-header" id="headingGoodBook">
+                        <h5 class="mb-0">
+                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseGoodBook"
+                              aria-expanded="false" aria-controls="collapseGoodBook">
+                              GoodBook - Full Stack project
+                           </button>
+                        </h5>
+                     </div>
+                     <div id="collapseGoodBook" class="collapse show" aria-labelledby="headingGoodBook"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                           <ul>
+                              <li>Tech stack - TypeScript, React, Express, Mongodb</li>
+                              <li>SPA App - containing 5 aggregates
+                                 (users, questions, comments, reading clubs, books)
+                              </li>
+                              <li>Frontend - React, FE validation with YUP and React Hook form, React-router v6.3</li>
+                              <li>Beckend - Nodejs, Express framework</li>
+                              <li>Beckend validation with Indicative</li>
+                              <li>Database - Mongodb</li>
+                              <li>custom styled components + MUI</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+              
+                  <div class="card">
                      <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
@@ -260,7 +292,7 @@
                            </button>
                         </h5>
                      </div>
-                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                            <ul>
                               <li>Pixel perfect UI cloning</li>
@@ -390,7 +422,7 @@
             <!-- laptop screen -->
             <div id="projects_picture">
                <img id="laptop" src="assets/pictures/laptopPNG.png" alt="laptop">
-               <video id="screen" controls muted autoplay src="assets/projects_video_files/glVideo.mp4"
+               <video id="screen" controls muted autoplay src="assets/projects_video_files/goodBook.mp4"
                   type="video/mp4">
                   <!-- <source src="assets/projects_video_files/friend_project_video.mp4" type="video/mp4"> -->
             </div>

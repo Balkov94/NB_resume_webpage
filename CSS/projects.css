@@ -1,173 +1,203 @@
-#projects_title{
-     width: 100%;
-     display: flex;
-     justify-content: flex-start;
-     padding-left: 6%;
-     margin-bottom: 25px;
-     font-size: 38px;
-     margin-top: 30vh;
-     margin-bottom: 10vh;
+#projects_title {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   padding-left: 6%;
+   margin-bottom: 25px;
+   font-size: 38px;
+   margin-top: 250px;
+   margin-bottom: 10vh;
 }
 
-#projects_container{
-     padding-left: 40px;
-     display: flex;
-     flex-direction: row;
-     width: 100%;
-     margin-bottom: 90vh;
-     z-index: 10;
-     height: fit-content;
-    
+#projects_container {
+   padding-left: 40px;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   margin-bottom: 90vh;
+   z-index: 10;
+   height: fit-content;
+
 }
+
 /* Project accordion menu section 
      ! overriding Bootstrap elements
 */
-#projects_text{
-     width: 34%;
-     background-color: black;   
-     opacity: 0.8;
-     border-radius: 0px 0px 0px 100px;
-     border-left: 1px solid rgb(155, 153, 153);
-     overflow-y: hidden;
-     height: 90vh;
-     padding-bottom: 80px;
-   
+#projects_text {
+   width: 34%;
+   background-color: black;
+   opacity: 0.8;
+   border-radius: 0px 0px 0px 100px;
+   border-left: 1px solid rgb(155, 153, 153);
+   overflow-y: hidden;
+   height: 90vh;
+   padding-bottom: 80px;
+   overflow-x: hidden;
+
 }
 
-#accordion{
-     background-color: black;      
+#accordion {
+   background-color: black;
 }
-#accordion .card{
-     background-color: black; 
+
+#accordion .card {
+   background-color: black;
 }
+
 /* acc btn header  */
-.btn.btn-link{
-     font-size: 20px;
-     padding-left: 0px;
-     text-decoration: none;
-     color: lightskyblue;
-}
-.btn.btn-link:hover{
-     color:rgb(218, 215, 215);
-}
-.card-header{
-     padding: 12px;
-}
-/* collapsable elements */
-.card-body ul{
-     padding-left: 40px;
-     padding-right: 20px;
-}
-.card-body ul li{
-     list-style-type: circle;
-     padding-bottom: 8px; 
-}
-/* after accordion text _____P.S.*/
-.after_accordion_text{
-     padding-left: 20px;
-     font-style: italic;    
-}
-.after_accordion_text a{
-     text-decoration: none;
-     color: white;
-    
+.btn.btn-link {
+   font-size: 20px;
+   padding-left: 0px;
+   text-decoration: none;
+   color: lightskyblue;
 }
 
-.after_accordion_text img{
-     -webkit-filter: invert(100%); /* Safari/Chrome */
-     filter: invert(100%);
-     width: 26px;
-     margin-left: 12px;
-     vertical-align: bottom;
+.btn.btn-link:hover {
+   color: rgb(218, 215, 215);
+}
+
+.card-header {
+   padding: 12px;
+}
+
+/* collapsable elements */
+.card-body ul {
+   padding-left: 40px;
+   padding-right: 20px;
+}
+
+.card-body ul li {
+   list-style-type: circle;
+   padding-bottom: 8px;
+}
+
+/* after accordion text _____P.S.*/
+.after_accordion_text {
+   padding-left: 20px;
+   font-style: italic;
+}
+
+.after_accordion_text a {
+   text-decoration: none;
+   color: white;
+
+}
+
+.after_accordion_text img {
+   -webkit-filter: invert(100%);
+   /* Safari/Chrome */
+   filter: invert(100%);
+   width: 26px;
+   margin-left: 12px;
+   vertical-align: bottom;
 }
 
 
 
 /* Project Laptop section __________________________*/
-#projects_picture{
-     width: 70%;
-     height: 90vh;
-     position: relative;
-     z-index: 10;
-   
-}
-#projects_picture #laptop{
-     width: 100%;
-     height: 100vh;
-     position: absolute;
+#projects_picture {
+   width: 70%;
+   height: 90vh;
+   position: relative;
+   z-index: 10;
+   /* border: 2px solid red; */
 
 }
 
-#projects_picture > #screen{
-     display: flex;
-     justify-content: center;
-     position: absolute;
-     width: 75%;
-     height: 70vh;
-     left: 12%;
-     top: 3%;
-     background-color: rgb(0, 0, 0);
+#projects_picture #laptop {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+
 }
+
+#projects_picture>#screen {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   width: 75%;
+   height: 70vh;
+   left: 12%;
+   top: 3%;
+   background-color: rgb(0, 0, 0);
+
+}
+
 /* MOBILE versions _______________________ */
 
 @media only screen and (max-width: 1200px) {
-     #projects_container {
-       flex-direction: column-reverse;
-       gap: 5vh;
-       justify-content: center;
-       align-items: center;
-       padding-left: 10px;
-       padding-right: 10px;
-       
-     }
-     #projects_text{
-          width: 100%;
-          padding-top:40px;
-          border-radius:40px;
-          border-right: 1px solid rgb(155, 153, 153);
-          height: fit-content;
-          margin-left: auto;
-          margin-right: auto;
-     }
-     #projects_picture{
-          width: 100%;
-          height: 80vh;
-     }
-     #laptop{
-          display: none;
-     }
-     #screen{
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          
-     }
-     #projects_picture > #screen{
-          display: flex;
-          justify-content: center;
-          position: absolute;
-          width: 100%;
-          left: 0px;
-          top: 0px;
+   #projects_container {
+      flex-direction: column-reverse;
+      gap: 5vh;
+      justify-content: center;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
 
-     }
    }
 
-   /* big screen fix     */
+   #projects_text {
+      width: 100%;
+      padding-top: 40px;
+      border-radius: 40px;
+      border-right: 1px solid rgb(155, 153, 153);
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+   }
 
-   @media only screen and (max-width: 1700px) {
-          #projects_picture{
-               zoom: 0.9;
-          }
-       
-     }
+   #projects_picture {
+      width: 100%;
+      height: 60vh;
+   }
 
-     @media only screen and (max-width: 1450px) {
-          #projects_picture{
-               zoom: 0.8;
-          }
-       
-     }
+   #laptop {
+      display: none;
+   }
 
-  
+   #screen {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
 
+   }
+
+   #projects_picture>#screen {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      background-color: black;
+   }
+
+   #projects_title h1{
+      width: 100%;
+      text-align: center;
+   }
+
+}
+
+/* big screen fix     */
+
+@media only screen and (max-width: 1700px) {
+   #projects_picture {
+      zoom: 0.9;
+   }
+
+}
+
+@media only screen and (max-width: 1450px) {
+   #projects_picture {
+      zoom: 0.8;
+   }
+
+}
+
+@media only screen and (max-width: 1450px) {
+   #projects_picture {
+      zoom: 0.8;
+   }
+
+}
