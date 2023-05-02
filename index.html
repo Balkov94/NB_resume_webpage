@@ -6,13 +6,14 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Bootstrap -->
-   <link  defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+   <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <!--  -->
    <link defer rel="stylesheet" href="CSS/reset.css">
    <link defer rel="stylesheet" href="CSS/wrapper_backgroundStyle.css">
    <link defer rel="stylesheet" href="CSS/wellcome_div.css">
    <link defer rel="stylesheet" href="CSS/intro_article.css">
+   <link defer rel="stylesheet" href="CSS/work_experience.css">
    <link defer rel="stylesheet" href="CSS/education_certificates.css">
    <link defer rel="stylesheet" href="CSS/technical_skills.css">
    <link defer rel="stylesheet" href="CSS/projects.css">
@@ -37,6 +38,8 @@
          <div id="waving_hand_container">
             <a href="#"><img id="waving_hand" src="assets/footer_icons/waving_hanPNG.png" alt="hand"></a>
             <p>Say hello</p>
+            <p></p>
+            <p style="font-size: 22px;">( just click ) </p>
          </div>
 
          <div id="welcome_container">
@@ -57,18 +60,45 @@
                </div>
             </div>
             <div id="article_text_container">
-
                <h1>Nikola Balkov</h1>
-
                <p>
-                  I love challenges, hard work, and well-deserved rest. 
-                  I appreciate every opportunity to learn new skills 
-                  and want to develop in the field of software development and new technologies. 
+                  I love challenges, hard work, and well-deserved rest.
+                  I appreciate every opportunity to learn new skills
+                  and want to develop in the field of software development and new technologies.
                   I believe that with enough time and desire everything is achievable.
                </p>
             </div>
-
          </article>
+
+         <!-- WORK EXPIRIENCE ______________________________________________-->
+         <div id="work_experience">
+            <div class="work_main_title">
+               <h1>Work experience</h1>
+            </div>
+            <div class="job">
+               <h2>Akkodis</h2>
+               <h2> 11/2022 - present</h2>
+               <h2>Junior Full Stack Web Application developer</h2>
+               <br>
+               <h2>Everyday responsibilities:</h2>
+               <div class="company_logo">
+                  <img src="assets/logos/akkodis.png" alt="akkodis_logo">
+               </div>
+               <p> &bull; writing clean easy to maintain code</p>
+               <p> &bull; working with relational database (MySQL)</p>
+               <p> &bull; using HTTP protocols for communication</p>
+               <p> &bull; Designing and implementing user interfaces</p>
+               <p> &bull; create new Front end features using javascript,React.js and external libraries</p>
+               <p> &bull; create new Back end features using Node.js and express.js</p>
+               <p> &bull; refactoring existing code to correspond to good practices</p>
+               <p> &bull; testing and debugging</p>
+               <p> &bull; manual testing</p>
+               <p> &bull; attending everyday meetings</p>
+               <p> &bull; participate in code reviews sessions</p>
+               <p> &bull; actively using scrum agile methodologies</p>
+            </div>
+         </div>
+         <!--  -->
 
          <!-- education and certificates div ______________________________________________-->
          <div id="education_title_container">
@@ -160,7 +190,8 @@
             </div>
             <!-- text with anchors (a) for certificates -->
             <div id="certification_text">
-               <a href="https://drive.google.com/file/d/1hDnhW6uOe_XXwPnRnLtktAfrXr7eGoiH/view?usp=share_link" target="_blank">
+               <a href="https://drive.google.com/file/d/1hDnhW6uOe_XXwPnRnLtktAfrXr7eGoiH/view?usp=share_link"
+                  target="_blank">
                   Modis Full-stack summer Academy 2022
                </a>
                <a href="https://app.testdome.com/cert/3df88fe1f85e430d92d9016478564ef0" target="_blank">
@@ -177,6 +208,7 @@
                <a href="https://softuni.bg/certificates/details/101620/c4f5d68f" target="_blank">
                   Programming Basics
                </a>
+               <p style="opacity:0.7">and others</p>
             </div>
          </div>
 
@@ -248,6 +280,24 @@
                   </span>
                </div>
                <div class="logo">
+                  <p>MySQL</p>
+                  <span>
+                     <img src="assets/logos/mysql.png" alt="git logo">
+                  </span>
+               </div>
+               <div class="logo">
+                  <p>NODE.js</p>
+                  <span>
+                     <img src="assets/logos/node.png" alt="git logo">
+                  </span>
+               </div>
+               <div class="logo">
+                  <p>JIRA</p>
+                  <span>
+                     <img src="assets/logos/jira.png" alt="git logo">
+                  </span>
+               </div>
+               <div class="logo">
                   <p>Git</p>
                   <span>
                      <img src="assets/logos/git_logo.png" alt="git logo">
@@ -290,7 +340,7 @@
                         </div>
                      </div>
                   </div>
-              
+
                   <div class="card">
                      <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
@@ -499,7 +549,6 @@
    <script src="js/technical_skills_effects.js"></script>
    <script src="js/personal_project_video_switching.js"></script>
 
-
    <!-- Bootstrap _______________________________________________-->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -510,7 +559,6 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
-
 </body>
 
 </html>

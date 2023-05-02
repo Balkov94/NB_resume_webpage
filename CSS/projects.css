@@ -17,7 +17,7 @@
    margin-bottom: 90vh;
    z-index: 10;
    height: fit-content;
-
+   line-height: 22px;
 }
 
 /* Project accordion menu section 
@@ -33,7 +33,6 @@
    height: 90vh;
    padding-bottom: 80px;
    overflow-x: hidden;
-   /* border: 2px solid red; */
 }
 
 #accordion {
@@ -46,10 +45,12 @@
 
 /* acc btn header  */
 .btn.btn-link {
-   font-size: 20px;
+   font-size: 18px;
    padding-left: 0px;
    text-decoration: none;
    color: lightskyblue;
+   width: 100%;
+   text-align: left;
 }
 
 .btn.btn-link:hover {
@@ -126,6 +127,9 @@
 /* MOBILE versions _______________________ */
 
 @media only screen and (max-width: 1200px) {
+   .btn.btn-link {
+      font-size: 14px;
+   }
    #projects_container {
       flex-direction: column-reverse;
       gap: 5vh;
@@ -133,7 +137,6 @@
       align-items: center;
       padding-left: 10px;
       padding-right: 10px;
-
    }
 
    #projects_text {
@@ -144,6 +147,7 @@
       height: fit-content;
       margin-left: auto;
       margin-right: auto;
+      line-height: 22px;
    }
 
    #projects_picture {

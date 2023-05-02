@@ -1,0 +1,40 @@
+
+.work_main_title{
+    font-size: 32px;
+    padding-left: 6%;
+    margin-bottom: 56px;
+}
+
+#work_experience .job{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 30px 20px 30px 20px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 25px;
+    border-left: 1px solid rgb(194, 193, 193);
+    border-right: 1px solid rgb(194, 193, 193);
+    position: relative;
+}
+
+
+.company_logo{
+    position: absolute;
+    top: 12px;
+    right: 0px
+}
+.company_logo img{
+    width: 80%;
+}
+
+@media only screen and (max-width: 690px) {
+    .company_logo{
+     display: none;
+    }
+  }

@@ -9,7 +9,7 @@
      height: 100vh;
      font-size: 56px;
      font-family: 'Brush Script MT', cursive;
-     
+     cursor: pointer;   
 }
 #waving_hand_container img{
      width: 200px;  
@@ -30,26 +30,24 @@
      100% {transform: rotate(-15deg);} 
 }
 
-
-
 /* second part animation _______________________*/
 .css-typing{
-     /* width: 100%;
-     background-color: rgb(50, 50, 137); */
      width: 100%;
+     box-sizing: border-box;
      height: 40vh;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
+     padding-left: 20px;
+     padding-right: 20px;
 }
 .css-typing p {
      border-right: .15em solid orange;
      font-family: "Courier";
      font-size: 36px;
      white-space: nowrap;
-     overflow: hidden;
-    
+     overflow: hidden; 
    }
    .css-typing p:nth-child(1) {
      width: 16.3em;
@@ -109,8 +107,8 @@
 
    /* Mobile ____________________ */
    @media only screen and (max-width: 1200px) {
-     .welcome_container{
-      width: 80%;
+     #welcome_container{
+      width: 100%;
       margin: auto;
       display: flex;
       justify-content: center;

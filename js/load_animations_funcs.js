@@ -4,7 +4,7 @@
 // all this for CHROME doc/ hack autoplay on sounds
 function activating_Typing_Sound() {
      let wavingHandContainer = document.getElementById("waving_hand_container");
-     let wavingHand = document.getElementById("waving_hand");
+     let wavingHand = document.getElementById("waving_hand_container");
 
      let audio = document.getElementById("audio");
      // disable scroll before loaded all animations
