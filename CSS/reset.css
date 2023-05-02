@@ -16,6 +16,7 @@ body{
      /* because footer/space suit img width 101% for better centrating*/
      overflow-x: hidden;
 	 width:100%;
+	 background-color:black;
 }
 
 html, body, div, span, applet, object, iframe,
