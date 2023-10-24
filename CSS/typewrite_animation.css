@@ -50,6 +50,9 @@
      font-size: 36px;
      white-space: nowrap;
      overflow: hidden; 
+     max-width: 100%; /* Adjust as needed */
+     /* Add a padding to control the space around the text */
+     padding: 0 10px; /* Adjust as needed */
    }
    .css-typing p:nth-child(1) {
      width: 16.3em;
